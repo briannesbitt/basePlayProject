@@ -1,0 +1,9 @@
+h1. BasePlayProject
+
+p. As the description says this is a Play framework module that contains some base functionality. I use it to help keep me DRYer.
+
+b. The software is provided "AS IS", without warranty of any kind
+
+p. This might not be spefically helpful to anyone but me but feel free to look at the code and use it if you want.
+
+p. If you really want to use it (really?) clone it to your @%play.path%/modules@ folder and then add @module.basePlayProject=${play.path}/modules/basePlayProject@ to your @application.conf@ file
