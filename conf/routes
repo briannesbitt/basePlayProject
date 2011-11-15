@@ -1,0 +1,14 @@
+# This file defines all module routes (Higher priority routes first)
+#
+# import these routes in the main app as :
+# *     /                       module:basePlayProject
+#
+# ~~~~
+
+GET     /?                      Module.index
+#GET     /images/               staticDir:public/images
+#GET     /css/                  staticDir:public/css
+#GET     /js/                   staticDir:public/js
+#GET     /public/               staticDir:public
+
+#GET     /favicon.ico           staticFile:public/images/favicon.ico

@@ -1,0 +1,4 @@
+self: play -> basePlayProject 0.1
+
+require:
+    - play
