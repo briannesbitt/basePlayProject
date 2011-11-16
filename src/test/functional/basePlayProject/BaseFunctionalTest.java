@@ -8,6 +8,8 @@ import org.junit.Before;
 import play.mvc.Router;
 import play.test.FunctionalTest;
 
+import java.util.Map;
+
 public abstract class BaseFunctionalTest extends FunctionalTest
 {
    protected WebTester wt;
@@ -36,5 +38,9 @@ public abstract class BaseFunctionalTest extends FunctionalTest
    protected String getRoute(String action)
    {
       return Router.reverse(action).url;
+   }
+   protected String getRoute(String action, Map<String,Object> args)
+   {
+      return Router.reverse(action, args).url;
    }
 }
