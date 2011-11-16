@@ -4,6 +4,10 @@ import play.Play;
 
 public class Globals
 {
+   public static String getApplicationName()
+   {
+      return Play.configuration.getProperty("application.name", "");
+   }
    private static String getUrlBase()
    {
       return Play.configuration.getProperty("application.baseUrl");
